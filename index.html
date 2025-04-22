@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>航能中宇 - 航天教育官网</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: #000; color: #eee; }
+    a { color: #FFA500; text-decoration: none; }
+    nav { background: #000; padding: 1em; display: flex; justify-content: space-between; align-items: center; }
+    nav .logo { font-size: 1.5em; font-weight: bold; color: #FFA500; }
+    nav ul { list-style: none; display: flex; gap: 1em; }
+    nav ul li a { color: #fff; padding: 0.5em; }
+    nav ul li a:hover { color: #FFA500; }
+    header {
+      height: 100vh; background: url('https://source.unsplash.com/1600x900/?space,technology') center/cover no-repeat;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; color: #fff; padding: 0 1em;
+    }
+    header h1 { font-size: 2.5em; margin-bottom: 0.5em; }
+    header p { font-size: 1.2em; max-width: 600px; }
+    .section { padding: 4em 2em; max-width: 1000px; margin: auto; }
+    .section h2 { color: #FFA500; text-align: center; margin-bottom: 1em; }
+    .features, .contact { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 2em; }
+    .feature { flex: 1 1 200px; background: #111; padding: 1.5em; border-radius: 8px; text-align: center; }
+    .feature i { font-size: 2em; margin-bottom: 0.5em; color: #FFA500; }
+    form { display: flex; flex-direction: column; gap: 0.5em; background: #111; padding: 2em; border-radius: 8px; }
+    input, textarea { padding: 0.75em; border: none; border-radius: 4px; background: #222; color: #fff; }
+    button { background: #FFA500; color: #000; border: none; padding: 0.75em; font-weight: bold; cursor: pointer; }
+    button:hover { background: #ff8c00; }
+    footer { text-align: center; padding: 2em; background: #111; color: #777; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">航能中宇</div>
+    <ul>
+      <li><a href="#home">首页</a></li>
+      <li><a href="#products">产品体系</a></li>
+      <li><a href="#philosophy">教育理念</a></li>
+      <li><a href="#cases">合作案例</a></li>
+      <li><a href="#contact">联系我们</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <h1>让每个孩子发现一片属于自己的星空</h1>
+    <p>航能中宇专注青少年航天教育，提供从航天课程到真实卫星互动的整体解决方案。</p>
+  </header>
+
+  <section id="products" class="section">
+    <h2>产品体系</h2>
+    <div class="features">
+      <div class="feature"><i class="fas fa-book"></i><h3>航天课程</h3><p>覆盖K12，项目式学习体系。</p></div>
+      <div class="feature"><i class="fas fa-flask"></i><h3>航天实验室</h3><p>测控站、态势感知平台全面落地。</p></div>
+      <div class="feature"><i class="fas fa-rocket"></i><h3>火箭发射</h3><p>提供真实搭载卫星发射服务。</p></div>
+      <div class="feature"><i class="fas fa-globe"></i><h3>航天研学</h3><p>沉浸式航天研学活动设计。</p></div>
+      <div class="feature"><i class="fas fa-trophy"></i><h3>航天赛事</h3><p>AI与航天结合的创新挑战赛。</p></div>
+    </div>
+  </section>
+
+  <section id="philosophy" class="section">
+    <h2>教育理念</h2>
+    <p>我们致力于传承中国航天精神，融合前沿科技教育理念，通过系统工程思维，培养具有使命感与创造力的新一代科技少年。</p>
+  </section>
+
+  <section id="cases" class="section">
+    <h2>案例与合作</h2>
+    <p>已与全国百余所学校开展深度合作，打造航天特色实验室及课程，如成都磨子桥小学、深圳宝山中学、上海清华中学等。</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>联系我们</h2>
+    <div class="contact">
+      <form onsubmit="event.preventDefault(); alert('提交成功，我们将尽快联系您！');">
+        <input type="text" name="name" placeholder="您的姓名" required>
+        <input type="text" name="org" placeholder="学校 / 单位名称" required>
+        <input type="email" name="email" placeholder="电子邮箱" required>
+        <textarea name="message" placeholder="留言 / 合作意向..." required></textarea>
+        <button type="submit">提交</button>
+      </form>
+      <div>
+        <p><strong>电话：</strong>13910821583</p>
+        <p><strong>邮箱：</strong>info@hangneng.com</p>
+        <p><strong>地址：</strong>北京市朝阳区京通大厦4层</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 航能中宇科技发展有限公司 ｜ 航天教育新未来
+  </footer>
+</body>
+</html>
